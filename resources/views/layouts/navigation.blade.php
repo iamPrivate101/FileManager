@@ -15,6 +15,15 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                  
+                    <x-nav-link :href="route('laravel-filemanager.unisharp.lfm.show')" :active="request()->routeIs('laravel-filemanager*')">
+                        {{ __('File Manager') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.index')">
+                        {{ __('Category') }}
+                    </x-nav-link>
+                    
                 </div>
             </div>
 
